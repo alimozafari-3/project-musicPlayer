@@ -76,3 +76,34 @@ body {
     margin-left: 9px;
     margin-top: 8px;
 }
+
+.container img {
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    transition: all 2s;
+}
+
+.animate {
+    animation: als 4.5s infinite linear;
+}
+
+@keyframes als {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.container h3 {
+    margin-left: 100px;
+    margin-top: 30px;
+    font-family: cursive;
+    font-weight: 400;
+    font-size: 19px;
+}
