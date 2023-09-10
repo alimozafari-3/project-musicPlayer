@@ -107,3 +107,37 @@ body {
     font-weight: 400;
     font-size: 19px;
 }
+
+.p-2 {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    color: rgb(128, 0, 79);
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-3 {
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+.p-4 {
+    margin-right: 22px;
+    margin-top: 0px;
+}
+
+.zaman {
+    width: 99%;
+}
+
+
+
+.contorol {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
