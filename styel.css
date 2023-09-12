@@ -141,3 +141,50 @@ body {
     justify-content: space-evenly;
     margin-top: 40px;
 }
+
+.bsf1 {
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.stop1 {
+    width: 35px;
+    height: 35px;
+    background-color: gold;
+    margin-left: 5px;
+    margin-top: 5px;
+    border-radius: 100%;
+    transition: all 1s;
+}
+
+.stop1 i {
+    margin-left: 10px;
+    margin-top: 8px;
+    color: rgb(0, 0, 0);
+}
+
+.stop1:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.bsf2 {
+    width: 35px;
+    height: 35px;
+    background-color: gold;
+    border-radius: 100%;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.bsf2 i {
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.bsf2:hover {
+    background-color: rgb(255, 255, 255);
+}
+
