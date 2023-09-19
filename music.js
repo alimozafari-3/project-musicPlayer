@@ -1,4 +1,3 @@
-
 let play = document.getElementById("playpus");
 let audio = document.getElementById("audio");
 let rangtme = document.querySelector(".zaman");
@@ -14,11 +13,30 @@ let setinterval;
 let index = 0;
 
 let track = [
-    "./audio/behnam-bani.mp3",
-    "./audio/Metallica-Nothing-Else.mp3",
-    "./audio/Shahin Najafi.mp3",
-  ];
-  let ims = ["./img/behnam-img.jpg", "./img/metalica1.png", "./img/shahin-img.jpg"];
-  let name1 = ["behnam bani", "metallica", "shahin najafi"];
-  let name2 = ["ashghi", "Nothing Else Matters", "parvaz"];
-  document.querySelector(".pas").classList.toggle("hiden");
+  "./audio/behnam-bani.mp3",
+  "./audio/Metallica-Nothing-Else.mp3",
+  "./audio/Shahin Najafi.mp3",
+];
+let ims = [
+  "./img/behnam-img.jpg",
+  "./img/metalica1.png",
+  "./img/shahin-img.jpg",
+];
+let name1 = ["behnam bani", "metallica", "shahin najafi"];
+let name2 = ["ashghi", "Nothing Else Matters", "parvaz"];
+document.querySelector(".pas").classList.toggle("hiden");
+
+play.addEventListener("click", () => {
+  // document.getElementById("imgs").classList.toggle("animate");
+  if (audio.paused) {
+    audio.play();
+
+    document.querySelector(".pl").classList.toggle("hiden");
+    document.querySelector(".pas").classList.remove("hiden");
+  } else {
+    audio.pause();
+    document.querySelector(".pas").classList.toggle("hiden");
+    document.querySelector(".pl").classList.remove("hiden");
+    clearInterval(setinter);
+  }
+});
