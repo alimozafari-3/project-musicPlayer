@@ -56,3 +56,19 @@ nx.addEventListener("click", () => {
 
   audio.play();
 });
+
+let bak = document.getElementById("back");
+bak.addEventListener("click", () => {
+  date1 = 0;
+  date2 = 0;
+  index--;
+  if (index < 0) {
+    index = 0;
+  }
+
+  audio.src = track[index];
+  imgs.src = ims[index];
+  nameplay1.innerHTML = name1[index];
+  nameplay2.innerHTML = name2[index];
+  audio.play();
+});
