@@ -72,3 +72,23 @@ bak.addEventListener("click", () => {
   nameplay2.innerHTML = name2[index];
   audio.play();
 });
+
+document.onkeyup = (e) => {
+  switch (e.key) {
+    case "Enter":
+      if (audio.paused) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+      break;
+
+    case "c":
+      if (audio.muted) {
+        audio.muted = false;
+      } else {
+        audio.muted = true;
+      }
+      break;
+  }
+};
